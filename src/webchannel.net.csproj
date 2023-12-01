@@ -2,10 +2,21 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <PackageId>MenloSystems.Webchannel.Net</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Arno Rehn (a.rehn@menlosystems.com)</Authors>
+    <Company>Menlo Systems GmbH</Company>
+    <Description>WebChannel.NET is an implementation of Qt's WebChannel protocol in C#/.NET.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/MenloSystems/webchannel.net.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>GPL-2.0-only AND LGPL-3.0-only</PackageLicenseExpression>
+    <IncludeSource>true</IncludeSource>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <None Include="../README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
 
 </Project>
